@@ -1,0 +1,1015 @@
+:root{
+    --blue: #2f89fc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ----------------------------------- header section starts -------------------------------  */
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 9%;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9));
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar .link{
+    margin-right: 6rem;
+}
+
+.header .navbar .link a{
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .8rem 1rem;
+}
+
+.header .navbar .button a{
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+.header .navbar .button .log{
+    border-left: .1rem solid #fff;
+    padding: 0 2.5rem;
+}
+
+.header .navbar .button a:nth-child(2){
+    padding: 1rem 2.5rem;
+    background: var(--blue);
+    border-radius: .5rem;
+}
+
+.header #menuBtn{
+    color: #fff;
+    font-size: 2rem;
+    padding: .8rem 1rem;
+    border: .1rem solid #fff;
+    display: none;
+}
+
+/* ----------------------------------- header section ends -------------------------------  */
+
+
+/* ----------------------------------- home section starts -------------------------------  */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('image/home-1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home .box-container{
+    max-width: 100vw;
+    /* background: #f00; */
+    margin: auto auto;
+    padding: 2rem;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.home .box-container .box h1{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    padding: 1rem 0;
+}
+
+.home .box-container .box p{
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+.home .box-container .inputBox{
+    margin-top: 3rem;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8));
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.home .box-container .inputBox .input{
+    margin-right: .5rem;
+    padding:  1.5rem 1rem;
+    padding-right: 5rem;
+    background: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    width: 27rem;
+}
+
+.home .box-container .inputBox .input::placeholder{
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.home .box-container .inputBox button{
+    margin-left: 3rem;
+    padding: 1.5rem 3.5rem;
+    background: var(--blue);
+    color: #fff;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.home .box-container .inputBox button:hover{
+    background: #0000ff;
+}
+
+.home .box-container .trending-search{
+    display: flex;
+    align-items: center;
+    /* background: #fd0efd; */
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.home .box-container .trending-search span{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.home .box-container .trending-search .search{
+    margin-left: 1rem;
+}
+
+.home .box-container .trending-search .search a{
+    padding: .5rem 1rem;
+    border: .1rem solid #fff;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: .5rem;
+    margin: 0 .1rem;
+    background: rgba(255,255,255,.2);
+}
+
+.home .box-container .trending-search .search a:hover{
+    background: #fff;
+    color: var(--blue);
+}
+
+/* ----------------------------------- home section ends -------------------------------  */
+
+/* ----------------------------------- featured section starts -------------------------------  */
+
+.featured{
+    background: #eee;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.featured .heading{
+    font-size: 2.5rem;
+    color: #333;
+    padding: 4rem 0;
+    font-weight: 500;
+}
+
+.featured .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.featured .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: .1rem .5rem .5rem  rgba(0,0,0,.1);
+}
+
+.featured .box-container .box img{
+    width: 100%;
+}
+
+.featured .box-container .box .icon{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured .box-container .box .icon .title{
+    font-size: 1.3rem;
+    color: #222;
+    padding: .8rem 1.5rem;
+    background: #eee;
+    border-radius: 5rem;
+}
+
+.featured .box-container .box .icon a i{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: #eee;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--blue);
+}
+
+.featured .box-container .box .icon a i:hover{
+    background: #f00;
+    color: #fff;
+}
+
+.featured .box-container .box .content{
+    padding: 0rem 1.5rem;
+}
+
+.featured .box-container .box .content h1{
+    font-size: 1.8rem;
+    color: var(--blue);
+    font-weight: normal;
+    padding-bottom: .5rem;
+}
+
+.featured .box-container .box .content p{
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: normal;
+}
+
+.featured .box-container .box .stars{
+    padding: 2rem 1.5rem;
+}
+
+.featured .box-container .box .stars a i{
+    font-size: 1.4rem;
+    color: #ffa500;
+}
+
+.featured .box-container .box .stars a i.last{
+    color: #222;
+}
+
+.featured .box-container .box .stars span{
+    font-size: 1.5rem;
+    color: #444;
+    margin-left: .5rem;
+}
+
+/* ----------------------------------- featured section ends -------------------------------  */
+
+/* -------------------------------------- categories section starts --------------------------  */
+
+.categories{
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+    background: #fff;
+    text-align: center;
+}
+
+.categories .heading{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.categories .heading h1{
+    font-size: 3.5rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.categories .heading p{
+    font-size: 1.5rem;
+    color: #333; 
+}
+
+.categories .box-container{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 1.5rem;
+}
+
+.categories .box-container .box{
+    /* border: .1rem solid #0000ff; */
+    cursor: pointer;
+    border-radius: .5rem;
+    padding: 4rem 2rem;
+}
+
+.categories .box-container .box:hover{
+    transform: scale(1.1);
+    background: var(--blue);
+}
+
+.categories .box-container .box i{
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.categories .box-container .box:hover i,
+.categories .box-container .box:hover .content span,
+.categories .box-container .box:hover a{
+    color: #fff;
+}
+
+.categories .box-container .box:hover a{
+    background: #3535e6;
+    box-shadow: 0 .5rem .5rem #3535e6;
+}
+
+.categories .box-container .box .content{
+    padding: 2rem 0;
+} 
+
+.categories .box-container .box .content span{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.categories .box-container .box a{
+    font-size: 1.5rem;
+    background: #eee;
+    padding: .5rem 2.5rem;
+    border-radius: 5rem;
+}
+
+/* -------------------------------------- categories section ends --------------------------  */
+
+/* ------------------------------------------ trending today section starts -------------------  */
+
+.today-trending{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: #eee;
+}
+
+.today-trending .heading{
+    font-size: 3rem;
+    color: var(--blue);
+    padding: 4rem 0;
+    font-weight: 500;
+}
+
+.today-trending .box-container{
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.today-trending .box-container .left-side{
+    flex-basis: 50%;
+    margin-right: 1rem;
+}
+
+.today-trending .box-container .right-side{
+    flex-basis: 50%;
+}
+
+.today-trending .box-container .col-1 .box{
+    display: flex;
+    margin: 2rem 0;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: .1rem .5rem .4rem rgba(0,0,0,.1);
+}
+
+.today-trending .box-container .col-1 .box .image{
+    width: 45%;
+}
+
+.today-trending .box-container .col-1 .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.today-trending .box-container .col-1 .box .container{
+    padding: 2rem;
+    width: 55%;
+}
+
+.today-trending .box-container .col-1 .box .icon{
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.today-trending .box-container .col-1 .box .icon .title{
+    font-size: 1.3rem;
+    color: #222;
+    padding: .8rem 1.5rem;
+    background: #eee;
+    border-radius: 5rem;
+}
+
+.today-trending .box-container .col-1 .box .icon a i{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: #eee;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--blue);
+}
+
+.today-trending .box-container .col-1 .box .icon a i:hover{
+    background: #f00;
+    color: #fff;
+}
+
+.today-trending .box-container .col-1 .box .content{
+    padding: 1.5rem 0;
+}
+
+.today-trending .box-container .col-1 .box .content h1{
+    font-size: 1.8rem;
+    color: var(--blue);
+    font-weight: normal;
+    padding-bottom: .5rem;
+}
+
+.today-trending .box-container .col-1 .box .content p{
+    font-size: 1.3rem;
+    color: #808080;
+    font-weight: normal;
+}
+
+.today-trending .box-container .col-1 .box .stars{
+    padding-top: .5rem;
+}
+
+.today-trending .box-container .col-1 .box .stars a i{
+    font-size: 1.4rem;
+    color: #ffa500;
+}
+
+.today-trending .box-container .col-1 .box .stars a i.last{
+    color: #222;
+}
+
+.today-trending .box-container .col-1 .box .stars span{
+    font-size: 1.5rem;
+    color: #444;
+    margin-left: .5rem;
+}
+
+
+/* ------------------------------------------ trending today section ends -------------------  */
+
+/* ------------------------------------------- testimonial sections starts ----------------------  */
+
+.testimonial{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background: #fff;
+    text-align: center;
+}
+
+.testimonial h1{
+    padding: 3rem;
+    font-size: 4rem;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.testimonial .box-container{
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .box-container .box{
+    flex-basis: 28%;
+    margin: 0 .5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.testimonial .box-container .box .image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .box-container .box h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.testimonial .box-container .box .content{
+    padding-bottom: 1rem;
+}
+
+.testimonial .box-container .box .content p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: #808080;
+}
+
+.testimonial .box-container .box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.testimonial .box-container .box:nth-child(2):hover{
+    transform: translateY(-20px);
+}
+
+/* ------------------------------------------- testimonial sections ends ----------------------  */
+
+/* ------------------------------------------------- blogs section starts -----------------------  */
+
+.blogs{
+    background: #eee;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+   
+}
+
+.blogs .heading{
+    text-align: center;
+    padding: 4rem;
+}
+
+.blogs .heading h1{
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    color: var(--blue);
+}
+
+.blogs .heading p{
+    font-size: 1.5rem;
+    color: #808080;
+}
+
+.blogs .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs .box-container .box{
+    flex-basis: 30%;
+    margin: 0 1rem;
+    border-radius: .5rem;
+}
+
+.blogs .box-container .box .image img{
+    width: 100%;
+}
+
+.blogs .box-container .box h3{
+    padding-top: 2.3rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.blogs .box-container .box .icon{
+    padding: .8rem 0; 
+    display: flex;
+    align-items: center;
+}
+
+.blogs .box-container .box .icon p{
+    color: #808080;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.blogs .box-container .box .icon span{
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .box .icon a{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: var(--blue);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem 0;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #808080;
+    line-height: 1.8;
+}
+
+.blogs .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.blogs .button .view-btn{
+    background: var(--blue);
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.3rem 3.2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.blogs .button .view-btn:hover{
+    background: #0000ff;
+}
+
+/* ------------------------------------------------- blogs section ends -----------------------  */
+
+/* ------------------------------------------------ newsletter section starts --------------------- */
+
+.newsletter{
+    background: var(--blue);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.newsletter .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter .box-container .box{
+    flex-basis: 40%;
+}
+
+.newsletter .box-container .box h1{
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.newsletter .box-container .box p{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.newsletter .box-container form{
+    flex-basis: 50%;
+}
+
+.newsletter .box-container form .email{
+    width: 70%;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border-bottom: .1rem solid #fff;
+    color: #fff;
+}
+
+.newsletter .box-container form .email::placeholder{
+    color: #eee;
+}
+
+.newsletter .box-container .btn{
+    padding: 1.5rem 2rem;
+    background: #fff;
+    color: #000;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.newsletter .box-container .btn:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+/* ------------------------------------------------ newsletter section ends --------------------  */
+
+/* -------------------------------------------- footer section starts ---------------  */
+
+.footer{
+    background: #333;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box .heading{
+    font-size: 2rem;
+    color: #fff;
+    padding: 2rem 0;
+    font-weight: normal;
+    letter-spacing: .1rem;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #808080;
+    line-height: 1.8;
+}
+
+.footer .box-container .box .links a{
+    display: block;
+    margin: 1rem 0;
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+.footer .box-container .box .links a:hover{
+    color: #fff;
+    padding-left: 1rem;
+}
+
+.footer .box-container .box .icons a{
+    margin-right: 2rem;
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+.footer .box-container .box .icons a:hover i{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.footer .box-container .box form{
+    padding: 2rem 0;
+}
+
+.footer .box-container .box form .mail{
+    background: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border: .1rem solid #808080;
+    width: 15rem;
+}
+
+.footer .box-container .box form .btn{
+    background: var(--blue);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer .box-container .box form .btn:hover{
+    background: #0000ff;
+}
+
+.footer .credit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    margin-top: 5rem;
+    border-top: .1rem solid #808080;
+    color: #808080;
+    font-size: 2rem;
+}
+
+/* -------------------------------------------- footer section ends ---------------  */
+
+
+
+
+
+
+
+
+
+/* ---------------------------- Media queries starts ---------------------------  */
+
+@media (max-width: 1294px){
+
+    .home .box-container .inputBox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .box-container .inputBox .input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .home .box-container .inputBox button{
+        margin-left: 0rem;
+    }
+
+}
+
+/* --------- max-width: 1040px ------- */
+
+@media (max-width: 1040px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+}
+
+/* ---------- for max-width: 768px ---------  */
+
+@media (max-width: 768px){
+
+    .header #menuBtn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -120%;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50rem;
+        padding: 2rem;
+        border-bottom-left-radius: 5rem;
+    }
+
+    .header .navbar .link,
+    .header .navbar .button{
+        margin: 0rem;
+        width: 100%;
+    }
+
+    .header .navbar .link a,
+    .header .navbar .button a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .header .navbar .button a,
+    .header .navbar .button .log{
+        padding: 1rem 2.5rem;
+        text-align: center;
+        background: var(--blue);
+        border-radius: .5rem;
+        border: none;
+    }
+
+    .header .navbar.active{
+        right: 0;
+        transition: .5s linear;
+    }
+
+    .home .box-container .trending-search{
+        flex-wrap: wrap;
+    }
+
+    .home .box-container .trending-search .search{
+        margin: 1rem 0;
+    }
+
+    .today-trending .box-container{
+        flex-wrap: wrap;
+    }
+
+    .today-trending .box-container .left-side,
+    .today-trending .box-container .right-side{
+        flex-basis: 100%;
+        margin-right: 0rem;
+    }
+
+    .testimonial .box-container{
+        flex-wrap: wrap;
+    }
+    
+    .testimonial .box-container .box{
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .blogs .box-container{
+        flex-wrap: wrap;
+    }
+    
+    .blogs .box-container .box{
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .newsletter .box-container{
+        flex-wrap: wrap;
+    }
+    
+    .newsletter .box-container .box,
+    .newsletter .box-container form{
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* ----------- max-width: 450px ----------  */
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header .navbar{
+        width: 30rem;
+    }
+
+    .categories .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+        gap: 1.5rem;
+    }
+
+    .today-trending .box-container .col-1 .box{
+        flex-wrap: wrap;
+    }
+
+    .today-trending .box-container .col-1 .box .image{
+        width: 100%;
+    }
+    
+    .today-trending .box-container .col-1 .box .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .today-trending .box-container .col-1 .box .container{
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .footer .credit{
+        font-size: 1.5rem;
+    }
+
+}
